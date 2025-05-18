@@ -45,6 +45,13 @@ java -jar target/log-parser.jar
 
 Enter the log file path: /path/to/your/logfile.log
 ```
+Output:
+
+```bash
+The number of unique IP addresses: 11
+The top 3 most visited URLs: [/docs/manage-websites/, /blog/2018/08/survey-your-opinion-matters/, /newsletter/]
+The top 3 most active IP addresses: [168.41.191.40, 50.112.00.11, 177.71.128.21]
+```
 
 ## Contributing
 
