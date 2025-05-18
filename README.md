@@ -4,9 +4,9 @@
 
 Parses Standard Log Files to print the following:
 
-• The number of unique IP addresses
-• The top 3 most visited URLs
-• The top 3 most active IP addresses
+- The number of unique IP addresses
+- The top 3 most visited URLs
+- The top 3 most active IP addresses
 
 ### Assumptions
 - Log format is strictly similar to the sample provided in /resources/programming-task-example-data.log
