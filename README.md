@@ -1,7 +1,3 @@
-Here’s a sample README.md for your log-parser repository:
-
----
-
 # log-parser
 
 Parses Standard Log Files to print the following:
