@@ -1,6 +1,6 @@
-package org.iptracker.com;
+package org.logparser.com;
 
-import org.iptracker.com.model.LogIndex;
+import org.logparser.com.model.LogIndex;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

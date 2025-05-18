@@ -1,4 +1,4 @@
-package org.iptracker.com.service;
+package org.logparser.com.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,15 +29,15 @@ class LogFileServiceTest {
     private Stream<String> mockLines;
 
     @Mock
-    private org.iptracker.com.service.LogLinesParsingService mockLogLinesParsingService;
+    private LogLinesParsingService mockLogLinesParsingService;
 
-    private org.iptracker.com.service.LogFileService logFileService;
+    private LogFileService logFileService;
 
     @BeforeEach
     void setUp() {
         logPath = Paths.get("test.txt");
         mockLines = Stream.of("line1", "line2", "line3");
-        logFileService = new org.iptracker.com.service.LogFileService(logPath, mockLogLinesParsingService);
+        logFileService = new LogFileService(logPath, mockLogLinesParsingService);
     }
 
     @Test

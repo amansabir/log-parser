@@ -1,6 +1,6 @@
-package org.iptracker.com.service;
+package org.logparser.com.service;
 
-import org.iptracker.com.model.LogIndex;
+import org.logparser.com.model.LogIndex;
 
 import java.util.List;
 import java.util.Map;
@@ -9,8 +9,8 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static org.iptracker.com.model.LogIndex.IP;
-import static org.iptracker.com.model.LogIndex.URL;
+import static org.logparser.com.model.LogIndex.IP;
+import static org.logparser.com.model.LogIndex.URL;
 
 public class LogLinesParsingService {
     public Set<String> extractUniqueIPs(Stream<String> logLinesAsStream){

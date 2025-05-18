@@ -1,4 +1,4 @@
-package org.iptracker.com.service;
+package org.logparser.com.service;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,10 +13,10 @@ public class LogFileService {
 
     private final Path logPath;
 
-    private final org.iptracker.com.service.LogLinesParsingService logLinesParsingService;
+    private final LogLinesParsingService logLinesParsingService;
 
 
-    public LogFileService(Path logPath, org.iptracker.com.service.LogLinesParsingService logLinesParsingService) {
+    public LogFileService(Path logPath, LogLinesParsingService logLinesParsingService) {
         this.logPath = logPath;
         this.logLinesParsingService = logLinesParsingService;
     }

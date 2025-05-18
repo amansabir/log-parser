@@ -1,4 +1,4 @@
-package org.iptracker.com.model;
+package org.logparser.com.model;
 
 public enum LogIndex {
     IP(0), URL(6);

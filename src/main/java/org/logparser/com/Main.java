@@ -1,4 +1,4 @@
-package org.iptracker.com;
+package org.logparser.com;
 
 import java.util.List;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package org.iptracker.com.service;
+package org.logparser.com.service;
 
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +22,7 @@ class LogLinesParsingServiceTest {
         Set<String> expectedSet = new HashSet<>(Arrays.asList("177.71.128.21", "168.41.191.40", "168.41.191.41", "177.71.128.21", "168.41.191.9"));
 
 
-        Set<String> actualSet = new org.iptracker.com.service.LogLinesParsingService().extractUniqueIPs(logLinesList.stream());
+        Set<String> actualSet = new LogLinesParsingService().extractUniqueIPs(logLinesList.stream());
 
         assertEquals(expectedSet, actualSet);
     }
@@ -40,7 +40,7 @@ class LogLinesParsingServiceTest {
 
         List<String> expectedList = Arrays.asList("/intranet-analytics/", "http://example.net/blog/category/meta/", "http://example.net/faq/");
 
-        List<String> actualList = new org.iptracker.com.service.LogLinesParsingService().extractTopThreeVisitedURLs(logLinesList.stream());
+        List<String> actualList = new LogLinesParsingService().extractTopThreeVisitedURLs(logLinesList.stream());
         Collections.sort(actualList);
 
         assertEquals(expectedList,actualList);
@@ -59,7 +59,7 @@ class LogLinesParsingServiceTest {
 
         List<String> expectedList = Arrays.asList("168.41.191.40", "168.41.191.41", "177.71.128.21");
 
-        List<String> actualList = new org.iptracker.com.service.LogLinesParsingService().extractTopThreeActiveIPs(logLinesList.stream());
+        List<String> actualList = new LogLinesParsingService().extractTopThreeActiveIPs(logLinesList.stream());
         Collections.sort(actualList);
 
         assertEquals(expectedList,actualList);
