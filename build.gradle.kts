@@ -1,8 +1,9 @@
 plugins {
     id("java")
+    id("jacoco")
 }
 
-group = "org.log-parser.com"
+group = "org.logparser.com"
 version = "1.0-SNAPSHOT"
 
 repositories {

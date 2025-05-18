@@ -13,6 +13,8 @@ import static org.logparser.com.model.LogIndex.IP;
 import static org.logparser.com.model.LogIndex.URL;
 
 public class LogLinesParsingService {
+
+    private static final String LOG_DELIMETER = " ";
     public Set<String> extractUniqueIPs(Stream<String> logLinesAsStream){
         return extractLogIndexAsStream(logLinesAsStream, IP).collect(Collectors.toSet());
     }
@@ -35,6 +37,6 @@ public class LogLinesParsingService {
     }
 
     private  Stream<String> extractLogIndexAsStream(Stream<String> logLinesAsStream, LogIndex logIndex)  {
-        return logLinesAsStream.map(line -> line.split(" ")[logIndex.getIndex()]);
+        return logLinesAsStream.map(line -> line.split(LOG_DELIMETER)[logIndex.getIndex()]);
     }
 }
