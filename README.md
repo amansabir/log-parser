@@ -1,10 +1,18 @@
 # log-parser
 
+## Overview
+
 Parses Standard Log Files to print the following:
 
 • The number of unique IP addresses
 • The top 3 most visited URLs
 • The top 3 most active IP addresses
+
+### Assumptions
+- Log format is strictly similar to the sample provided in /resources/programming-task-example-data.log
+- For each log line, the words are separated by single space (" ")
+- The IP address is the 1st element in the log line split by single space
+- The URL  is the 7th element in the log line split by single space
 
 ## Getting Started
 
@@ -45,7 +53,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-Let me know if you want to customize or expand any section!
